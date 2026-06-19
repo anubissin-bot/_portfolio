@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AYAKA KOIKE — Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="wolf.ico" type="favicon.ico"> 
+</head>
+<body>
+<!-- =========================
+     Loading Screen
+========================= -->
+
+<div id="loading">
+
+  <div class="loading-dog">
+    <img src="1.png" class="dog frame1" alt="">
+    <img src="2.png" class="dog frame2" alt="">
+    <img src="3.png" class="dog frame3" alt="">
+    <img src="4.png" class="dog frame4" alt="">
+    <img src="5.png" class="dog frame5" alt="">
+    <img src="6.png" class="dog frame6" alt="">
+    <img src="7.png" class="dog frame7" alt="">
+    <img src="8.png" class="dog frame8" alt="">
+  </div>
+
+  <p>Loading...</p>
+
+</div>
+
+</div>
+
+</div>
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="#" id="logoLink">AYAKA KOIKE<span class="logo-tagline">Web Designer / Illustrator<br>ECサイト・SNSデザイン・イラスト制作</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">menu</button>
+  </header>
+
+  <!-- SIDE MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- SIDE MENU PANEL -->
+  <nav class="side-menu" id="sideMenu">
+    <button class="menu-close" id="menuClose" aria-label="閉じる">close</button>
+    <ul class="side-nav">
+      <li><a href="#" class="side-nav-link" id="navTop">Top</a></li>
+      <li><a href="#" class="side-nav-link" id="navAbout">About Me</a></li>
+    </ul>
+
+    <a href="#" class="side-cta" id="navContact">Contact</a>
+
+    <div class="side-socials">
+      <a href="https://lin.ee/あなたのID" class="social-btn" aria-label="LINE" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 3.5c-5.25 0-9.5 3.36-9.5 7.5 0 3.7 3.36 6.8 7.9 7.4.31.07.73.2.84.47.1.24.06.62.03.86l-.13.83c-.04.24-.19.95.83.52 1.02-.43 5.5-3.24 7.5-5.55C20.85 13.5 21.5 12.3 21.5 11c0-4.14-4.25-7.5-9.5-7.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M8.6 9.4v3.4M10.6 9.4v3.4M10.6 9.4l-2 3.4M10.6 9.4l2 3.4M13.6 9.4v3.4h1.7M16.6 9.4v3.4h1.6M16.6 11.1h1.4" stroke="currentColor" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/あなたのID" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="17.4" cy="6.6" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a href="https://minne.com/あなたのID" class="social-btn" aria-label="minne" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M6.5 16V9.8C6.5 9.36 6.86 9 7.3 9c.34 0 .64.21.76.53L9.5 12.4l1.44-2.87A.83.83 0 0 1 11.7 9c.44 0 .8.36.8.8V16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.5 16V9.8c0-.44.36-.8.8-.8.34 0 .64.21.76.53L16.5 12.4l1.44-2.87A.83.83 0 0 1 18.7 9c.44 0 .8.36.8.8V16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- 右下キャラクターイラスト -->
+    <img src="img/IMG_0358.png" alt="" class="menu-chara" aria-hidden="true">
+  </nav>
+
+  <!-- GRID -->
+  <main id="grid"></main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Art Portfolio</p>
+    <p>©2025 AYAKA KOIKE</p>
+  </footer>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="webdesign">Web Design</button>
+    <button class="filter-btn" data-filter="graphic">Graphic</button>
+    <button class="filter-btn" data-filter="illustration">Illustration</button>
+    <button class="filter-btn" data-filter="art">Art</button>
+  </div>
+
+  <!-- WHITE FLASH -->
+  <div class="flash" id="flash"></div>
+
+  <!-- DETAIL PAGE -->
+  <div class="detail-page" id="detailPage">
+    <button class="detail-back" id="detailBack">← Back</button>
+    <div class="detail-inner">
+      <div class="detail-image-wrap">
+        <img class="detail-img" id="detailImg" src="" alt="">
+      </div>
+      <div class="detail-info">
+        <p class="detail-category" id="detailCategory"></p>
+        <h1 class="detail-title" id="detailTitle"></h1>
+        <dl class="detail-specs" id="detailSpecs"></dl>
+        <div class="detail-divider"></div>
+        <p class="detail-concept-label">concept</p>
+        <p class="detail-concept" id="detailConcept"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div class="about-page" id="aboutPage">
+    <button class="detail-back" id="aboutBack">← Back</button>
+
+    <div class="about-inner">
+
+      <!-- 左カラム -->
+      <div class="about-left">
+        <div class="about-photo-wrap">
+          <img src="img/aya.jpeg" alt="Profile" class="about-photo">
+        </div>
+        <div class="about-intro">
+          <p>はじめまして、〇〇 〇〇です。</p>
+          <p>Web業界に興味を持ち、独学でコーディングやデザインの学習を始めました。</p>
+          <p>このポートフォリオでは、学習の成果や制作した作品をまとめています。</p>
+          <p>未経験ではありますが、素直さと継続力を大切にし、日々スキルアップに取り組んでいます。</p>
+          <p>ご覧いただけると嬉しいです！</p>
+        </div>
+      </div>
+
+      <!-- 右カラム -->
+      <div class="about-right">
+
+        <section class="about-section">
+          <h2 class="about-section-title">Profile</h2>
+          <dl class="about-profile-list">
+            <div class="about-profile-row"><dt>名前</dt><dd>〇〇 〇〇</dd></div>
+            <div class="about-profile-row"><dt>年齢</dt><dd>〇〇歳</dd></div>
+            <div class="about-profile-row"><dt>居住地</dt><dd>〇〇県</dd></div>
+            <div class="about-profile-row"><dt>学習期間</dt><dd>約〇ヶ月</dd></div>
+            <div class="about-profile-row"><dt>学習方法</dt><dd>Progate / ドットインストール / 書籍 / YouTube 等</dd></div>
+            <div class="about-profile-row"><dt>目標</dt><dd>コーディングができるWeb制作会社で働くこと</dd></div>
+          </dl>
+        </section>
+
+        <section class="about-section">
+          <h2 class="about-section-title">使用しているスキル・ツール</h2>
+          <ul class="about-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+          </ul>
+        </section>
+
+        <section class="about-section">
+          <h2 class="about-section-title">大切にしていること</h2>
+          <ul class="about-values">
+            <li>
+              <span class="about-value-title">素直に学ぶこと</span>
+              <p>新しい知識を吸収し、すぐに実践することを意識しています。</p>
+            </li>
+            <li>
+              <span class="about-value-title">継続すること</span>
+              <p>毎日コツコツ学習を続け、少しずつでも前に進むことを大切にしています。</p>
+            </li>
+            <li>
+              <span class="about-value-title">相手のことを考えること</span>
+              <p>使う人にとって分かりやすく、伝わるデザイン・コーディングを心がけています。</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-section">
+          <h2 class="about-section-title">Like</h2>
+          <div class="about-likes">
+            <div class="about-like-item">
+              <div class="about-like-img-wrap">
+                <img src="img/ryokou.jpeg" alt="旅行">
+              </div>
+              <p>旅行</p>
+            </div>
+            <div class="about-like-item">
+              <div class="about-like-img-wrap">
+                <img src="img/rin.png" alt="ハスキー">
+              </div>
+              <p>ハスキー</p>
+            </div>
+            <div class="about-like-item">
+              <div class="about-like-img-wrap">
+                <img src="img/bara.jpeg" alt="植物">
+              </div>
+              <p>植物</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT PAGE -->
+  <div class="contact-page" id="contactPage">
+    <button class="detail-back" id="contactBack">← Back</button>
+
+    <div class="contact-inner">
+      <div class="contact-intro">
+        <p class="section-label-sm">Contact</p>
+        <h1 class="contact-title">お問い合わせ</h1>
+        <p class="contact-text">
+          作品に関するご質問、ご依頼、その他お問い合わせは<br>
+          以下のフォームよりお気軽にご連絡ください。
+        </p>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="#" method="post">
+        <div class="form-row">
+          <label for="cf-name">お名前</label>
+          <input type="text" id="cf-name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">メールアドレス</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-subject">件名</label>
+          <input type="text" id="cf-subject" name="subject">
+        </div>
+        <div class="form-row">
+          <label for="cf-message">メッセージ</label>
+          <textarea id="cf-message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">送信する</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const photos = [
+      { id: 10, file: 'wolf3.jpeg', cat: 'art', w: 800, h: 600, title: '作品タイトル 01', specs: { size: 'F10号 (530×455mm)', date: '2024年 3月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 20, file: 'degi1.png',cat: 'illustration', w: 600, h: 800, title: '作品タイトル 02', specs: { size: 'A2 (420×594mm)', date: '2024年 1月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 30, file: 'aq3.jpeg', cat: 'art', w: 800, h: 530, title: '作品タイトル 03', specs: { size: 'F8号 (455×380mm)', date: '2023年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 40, file: 'cat3.jpeg',cat: 'webdesign', w: 700, h: 700, title: '作品タイトル 04', specs: { size: '3000×3000px', date: '2024年 2月', time: '5日間', soft: 'Photoshop / Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 50, file: 'wolf4.jpeg', cat: 'art', w: 600, h: 900, title: '作品タイトル 05', specs: { size: 'F12号 (606×500mm)', date: '2023年 9月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 60, file: 'degi3.png', cat: 'illustration', w: 900, h: 500, title: '作品タイトル 06', specs: { size: 'B3 (515×364mm)', date: '2024年 4月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 70, file: '260326_banner300_13.jpg', cat: 'graphic', w: 800, h: 800, title: '作品タイトル 07', specs: { size: '4000×4000px', date: '2024年 3月', time: '1週間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 80, file: 'fox1.jpeg', cat: 'art', w: 600, h: 750, title: '作品タイトル 08', specs: { size: 'F6号 (410×318mm)', date: '2023年 12月', time: '10日間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 90, file: 'wolf5.jpeg', cat: 'art', w: 750, h: 560, title: '作品タイトル 09', specs: { size: 'F10号 (530×455mm)', date: '2023年 8月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 100, file: '1dezaincomp_13.jpg', cat: 'webdesign', w: 800, h: 600, title: '作品タイトル 10', specs: { size: '297×210mm (A4)', date: '2024年 1月', time: '4日間', soft: 'Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 110, file: 'degi4.png', cat: 'illustration', w: 600, h: 850, title: '作品タイトル 11', specs: { size: 'A2 (420×594mm)', date: '2023年 10月', time: '5日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 120, file: 'draw1.jpeg', cat: 'art', w: 900, h: 550, title: '作品タイトル 12', specs: { size: 'F15号 (652×530mm)', date: '2024年 2月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 130, file: 'copy260330_leaflet_13.jpg', cat: 'graphic', w: 700, h: 700, title: '作品タイトル 13', specs: { size: '3500×3500px', date: '2023年 7月', time: '6日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 140, cat: 'art', w: 600, h: 800, title: '作品タイトル 14', specs: { size: 'F10号 (530×455mm)', date: '2023年 6月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 150, file: 'degi5.png', cat: 'illustration', w: 800, h: 600, title: '作品タイトル 15', specs: { size: 'B2 (515×728mm)', date: '2023年 5月', time: '1週間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 160, cat: 'art', w: 750, h: 700, title: '作品タイトル 16', specs: { size: 'F8号 (455×380mm)', date: '2023年 4月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 170, cat: 'art', w: 600, h: 900, title: '作品タイトル 17', specs: { size: 'F12号 (606×500mm)', date: '2023年 3月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 180, file: 'degi8.jpg',cat: 'illustration', w: 900, h: 600, title: '作品タイトル 18', specs: { size: 'A1 (594×841mm)', date: '2023年 2月', time: '2週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 190, cat: 'webdesign', w: 750, h: 950, title: '作品タイトル 19', specs: { size: '3000×3800px', date: '2023年 1月', time: '4日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 200, cat: 'art', w: 850, h: 650, title: '作品タイトル 20', specs: { size: 'F10号 (530×455mm)', date: '2022年 12月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 210, cat: 'art', w: 700, h: 600, title: '作品タイトル 21', specs: { size: 'F8号 (455×380mm)', date: '2022年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 220, cat: 'illustration', w: 650, h: 900, title: '作品タイトル 22', specs: { size: 'A2 (420×594mm)', date: '2022年 10月', time: '6日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 230, file: '260327_banner300_13.jpg', cat: 'graphic', w: 900, h: 600, title: '作品タイトル 23', specs: { size: '3600×2400px', date: '2022年 9月', time: '1週間', soft: 'Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 240, cat: 'art', w: 600, h: 750, title: '作品タイトル 24', specs: { size: 'F6号 (410×318mm)', date: '2022年 8月', time: '4週間', medium: '油彩・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 250, cat: 'illustration', w: 850, h: 600, title: '作品タイトル 25', specs: { size: 'B3 (515×364mm)', date: '2022年 7月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 260, cat: 'art', w: 950, h: 700, title: '作品タイトル 26', specs: { size: 'F15号 (652×530mm)', date: '2022年 6月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 270, cat: 'webdesign', w: 700, h: 700, title: '作品タイトル 27', specs: { size: '3000×3000px', date: '2022年 5月', time: '5日間', soft: 'Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 280, cat: 'art', w: 600, h: 850, title: '作品タイトル 28', specs: { size: 'F12号 (606×500mm)', date: '2022年 4月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 290, cat: 'illustration', w: 900, h: 650, title: '作品タイトル 29', specs: { size: 'A1 (594×841mm)', date: '2022年 3月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 300, cat: 'art', w: 750, h: 950, title: '作品タイトル 30', specs: { size: 'F10号 (530×455mm)', date: '2022年 2月', time: '2週間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 310, cat: 'graphic', w: 800, h: 600, title: '作品タイトル 31', specs: { size: '297×210mm (A4)', date: '2022年 1月', time: '4日間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 320, cat: 'art', w: 650, h: 600, title: '作品タイトル 32', specs: { size: 'F8号 (455×380mm)', date: '2021年 12月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 330, cat: 'illustration', w: 600, h: 900, title: '作品タイトル 33', specs: { size: 'A2 (420×594mm)', date: '2021年 11月', time: '5日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 340, cat: 'art', w: 900, h: 600, title: '作品タイトル 34', specs: { size: 'F12号 (606×500mm)', date: '2021年 10月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 350, cat: 'webdesign', w: 750, h: 750, title: '作品タイトル 35', specs: { size: '3500×3500px', date: '2021年 9月', time: '6日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 360, cat: 'art', w: 850, h: 600, title: '作品タイトル 36', specs: { size: 'F10号 (530×455mm)', date: '2021年 8月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },];
+     
+window.addEventListener("load", () => {
+
+  const loading = document.getElementById("loading");
+
+  setTimeout(() => {
+
+    loading.classList.add("fade");
+
+    setTimeout(() => {
+      loading.remove();
+    }, 800);
+
+  }, 1800);
+
+});
+
+    const grid = document.getElementById('grid');
+
+    // 画面幅に応じて行数を決定（PC:3行 / タブレット:2行 / スマホ:1行）
+    const ROWS = window.innerWidth <= 480 ? 1 : 2;
+    const ROW_SPEEDS = { 1: [1], 2: [1, 0.9] };
+    const speeds = ROW_SPEEDS[ROWS];
+
+    grid.style.setProperty('--rows', ROWS);
+
+    const rows = [];
+    for (let i = 0; i < ROWS; i++) {
+      const row = document.createElement('div');
+      row.className = 'track-row';
+      row.dataset.speed = speeds[i];
+      grid.appendChild(row);
+      rows.push(row);
+    }
+
+    photos.forEach((p, i) => {
+      const item = document.createElement('div');
+      item.className = 'photo-item';
+      item.dataset.cat = p.cat;
+      const img = document.createElement('img');
+      img.src = p.file
+        ? `img/${p.file}`
+        : `https://picsum.photos/seed/${p.id}/${p.w}/${p.h}`;
+      img.alt = p.title;
+      img.loading = 'lazy';
+      img.addEventListener('load', () => updateMaxScroll());
+      const overlay = document.createElement('div');
+      overlay.className = 'photo-overlay';
+      overlay.innerHTML = `<span class="photo-label">${p.title}</span>`;
+      item.appendChild(img);
+      item.appendChild(overlay);
+      item.addEventListener('click', () => openDetail(p, img.src));
+      rows[i % ROWS].appendChild(item);
+    });
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.photo-item').forEach(item => {
+          item.classList.toggle('hidden', f !== 'all' && item.dataset.cat !== f);
+        });
+        targetScroll = 0;
+        currentScroll = 0;
+        requestAnimationFrame(updateMaxScroll);
+      });
+    });
+
+    // Side Menu
+    const menuToggle  = document.getElementById('menuToggle');
+    const menuClose   = document.getElementById('menuClose');
+    const sideMenu    = document.getElementById('sideMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const flash       = document.getElementById('flash');
+
+    function openMenu() {
+      sideMenu.classList.add('open');
+      menuOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      sideMenu.classList.remove('open');
+      menuOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+
+    // Flash helper
+    function flashTransition(callback) {
+      flash.classList.add('active');
+      setTimeout(() => {
+        callback();
+        setTimeout(() => flash.classList.remove('active'), 400);
+      }, 500);
+    }
+
+    // Detail Page
+    const detailPage     = document.getElementById('detailPage');
+    const detailImg      = document.getElementById('detailImg');
+    const detailTitle    = document.getElementById('detailTitle');
+    const detailCategory = document.getElementById('detailCategory');
+    const detailSpecs    = document.getElementById('detailSpecs');
+    const detailConcept  = document.getElementById('detailConcept');
+    const detailBack     = document.getElementById('detailBack');
+
+    const catLabels = { oil: 'Oil Painting', acrylic: 'Acrylic', digital: 'Digital', drawing: 'Drawing' };
+
+    function openDetail(p, src) {
+      flashTransition(() => {
+        detailImg.src = src;
+        detailCategory.textContent = catLabels[p.cat] || p.cat;
+        detailTitle.textContent = p.title;
+        detailConcept.textContent = p.concept;
+        detailSpecs.innerHTML = '';
+        Object.entries(p.specs).forEach(([key, val]) => {
+          detailSpecs.innerHTML += `<div class="spec-row"><dt>${key}</dt><dd>${val}</dd></div>`;
+        });
+        detailPage.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    function closeDetail() {
+      flashTransition(() => {
+        detailPage.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+
+    detailBack.addEventListener('click', closeDetail);
+
+    // About Page
+    const aboutPage = document.getElementById('aboutPage');
+    const aboutBack = document.getElementById('aboutBack');
+
+    function openAbout() {
+      closeMenu();
+      flashTransition(() => {
+        aboutPage.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        aboutPage.scrollTop = 0;
+      });
+    }
+
+    function closeAbout() {
+      flashTransition(() => {
+        aboutPage.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+
+    document.getElementById('navAbout').addEventListener('click', e => {
+      e.preventDefault();
+      openAbout();
+    });
+
+    aboutBack.addEventListener('click', closeAbout);
+
+    // Contact Page
+    const contactPage = document.getElementById('contactPage');
+    const contactBack = document.getElementById('contactBack');
+    const contactForm = document.getElementById('contactForm');
+    const formNote    = document.getElementById('formNote');
+
+    function openContact() {
+      closeMenu();
+      flashTransition(() => {
+        contactPage.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        contactPage.scrollTop = 0;
+      });
+    }
+
+    function closeContact() {
+      flashTransition(() => {
+        contactPage.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+
+    document.getElementById('navContact').addEventListener('click', e => {
+      e.preventDefault();
+      openContact();
+    });
+
+    contactBack.addEventListener('click', closeContact);
+
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      // ここで実際の送信処理（API呼び出しやメール送信サービスなど）に差し替えてください
+      formNote.textContent = 'メッセージを送信しました。ありがとうございます。';
+      contactForm.reset();
+    });
+
+    // Top / Logo → 一覧に戻る
+    document.getElementById('navTop').addEventListener('click', e => {
+      e.preventDefault();
+      closeMenu();
+      if (detailPage.classList.contains('open')) closeDetail();
+      if (aboutPage.classList.contains('open')) closeAbout();
+      if (contactPage.classList.contains('open')) closeContact();
+    });
+
+    document.getElementById('logoLink').addEventListener('click', e => {
+      e.preventDefault();
+      if (detailPage.classList.contains('open')) closeDetail();
+      if (aboutPage.classList.contains('open')) closeAbout();
+      if (contactPage.classList.contains('open')) closeContact();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeDetail(); closeAbout(); closeContact(); closeMenu(); }
+    });
+
+    // ── マウスホイールで横に滑らかにスクロール（lerp + 行ごとのパララックス） ──
+    let currentScroll = 0;
+    let targetScroll  = 0;
+    let maxScroll     = 0;
+    const EASE = 0.09;
+
+    let autoScroll  = true;
+    let navHover    = false;
+    let gridHover   = false;
+    let autoDir     = 1;
+    const AUTO_SPEED   = 0.6;
+    const RESUME_DELAY = 1500;
+    const HOVER_DELAY  = 1000; // カーソルを乗せてから動き出すまで（1秒）
+    const RAMP_TIME    = 1000; // ゆっくり加速する時間
+    const DECEL_EASE   = 0.04; // 止まる時のゆっくり度（小さいほど余韻が長い）
+    let resumeTimer  = null;
+    let moveStartAt  = null;
+    let currentSpeedFactor = 0; // 実際に使う速度係数（なめらかに増減）
+
+    function pauseAuto() {
+      autoScroll = false;
+      moveStartAt = null;
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => { autoScroll = true; }, RESUME_DELAY);
+    }
+
+    function updateMaxScroll() {
+      maxScroll = Math.max(0, ...rows.map(row => row.scrollWidth - grid.clientWidth));
+    }
+    function clampTarget() {
+      targetScroll = Math.max(0, Math.min(targetScroll, maxScroll));
+    }
+
+    function smoothScrollLoop() {
+      const movementAllowed = autoScroll && !navHover && gridHover && maxScroll > 0;
+
+      let targetSpeedFactor = 0;
+      if (movementAllowed) {
+        if (moveStartAt === null) moveStartAt = performance.now();
+        const elapsed = performance.now() - moveStartAt;
+        if (elapsed > HOVER_DELAY) {
+          const t = Math.min(1, (elapsed - HOVER_DELAY) / RAMP_TIME);
+          targetSpeedFactor = t * t; // ease-in
+        }
+      } else {
+        moveStartAt = null;
+      }
+
+      // 速度係数をなめらかに増減（止まる時もゆっくり減速）
+      currentSpeedFactor += (targetSpeedFactor - currentSpeedFactor) * DECEL_EASE;
+      if (Math.abs(targetSpeedFactor - currentSpeedFactor) < 0.001) currentSpeedFactor = targetSpeedFactor;
+
+      if (currentSpeedFactor > 0.0005) {
+        targetScroll += AUTO_SPEED * currentSpeedFactor * autoDir;
+        if (targetScroll >= maxScroll) { targetScroll = maxScroll; autoDir = -1; }
+        if (targetScroll <= 0)         { targetScroll = 0;         autoDir = 1; }
+      }
+
+      currentScroll += (targetScroll - currentScroll) * EASE;
+      if (Math.abs(targetScroll - currentScroll) < 0.05) currentScroll = targetScroll;
+
+      const ratio = maxScroll > 0 ? currentScroll / maxScroll : 0;
+      rows.forEach(row => {
+        const speed  = parseFloat(row.dataset.speed) || 1;
+        const rowMax = Math.max(0, row.scrollWidth - grid.clientWidth);
+        const offset = Math.min(ratio * speed, 1) * rowMax;
+        row.style.transform = `translate3d(-${offset}px,0,0)`;
+      });
+
+      requestAnimationFrame(smoothScrollLoop);
+    }
+
+    updateMaxScroll();
+    requestAnimationFrame(smoothScrollLoop);
+    window.addEventListener('resize', () => {
+      updateMaxScroll();
+      clampTarget();
+    });
+
+    // 作品エリア：カーソルが乗ったら自動スクロール開始 + 全カードを薄暗くする
+    // mouseleaveを少し遅らせてチカチカを防止
+    let dimLeaveTimer = null;
+    grid.addEventListener('mouseenter', () => {
+      clearTimeout(dimLeaveTimer);
+      gridHover = true;
+      rows.forEach(r => r.classList.add('dim'));
+    });
+    grid.addEventListener('mouseleave', () => {
+      dimLeaveTimer = setTimeout(() => {
+        gridHover = false;
+        rows.forEach(r => r.classList.remove('dim'));
+      }, 80); // 80ms の猶予でチカチカ防止
+    });
+
+    // 上部ナビ（header / フィルターバー）にカーソルがある間は自動スクロールを止める
+    document.querySelector('header').addEventListener('mouseenter', () => { navHover = true; });
+    document.querySelector('header').addEventListener('mouseleave', () => { navHover = false; });
+    document.querySelector('.filter-bar').addEventListener('mouseenter', () => { navHover = true; });
+    document.querySelector('.filter-bar').addEventListener('mouseleave', () => { navHover = false; });
+
+    // ホイール → 横スクロール（操作した時だけ自動を一時停止し、しばらくしたら再開）
+    grid.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      pauseAuto();
+      const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      targetScroll += delta;
+      clampTarget();
+    }, { passive: false });
+
+    // ドラッグで横スクロール
+    let isDown = false;
+    let startX = 0;
+    let startTarget = 0;
+
+    grid.addEventListener('mousedown', (e) => {
+      pauseAuto();
+      isDown = true;
+      startX = e.pageX;
+      startTarget = targetScroll;
+    });
+    window.addEventListener('mouseup', () => { isDown = false; });
+    grid.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      pauseAuto();
+      targetScroll = startTarget - (e.pageX - startX);
+      clampTarget();
+    });
+
+    // タッチで横スクロール
+    let touchStartX = 0;
+    let touchStartTarget = 0;
+    grid.addEventListener('touchstart', (e) => {
+      pauseAuto();
+      touchStartX = e.touches[0].pageX;
+      touchStartTarget = targetScroll;
+    }, { passive: true });
+    grid.addEventListener('touchmove', (e) => {
+      pauseAuto();
+      targetScroll = touchStartTarget - (e.touches[0].pageX - touchStartX);
+      clampTarget();
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
