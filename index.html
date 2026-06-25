@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="logo.ico" type="favicon.ico"> 
   <link rel="apple-touch-icon" href="logo.ico" sizes="180x180">
-<link rel="icon" type="image/png" href="logo.ico" sizes="192x192">
+<link rel="icon" type="image/png" href="logo.ico" sizes="192x192"> 
+
 </head>
 <body>
 <!-- =========================
@@ -78,7 +79,7 @@
     </div>
 
     <!-- 右下キャラクターイラスト -->
-    <img src="IMG_0358.png" alt="" class="menu-chara" aria-hidden="true">
+    <img src="img/IMG_0358.png" alt="" class="menu-chara" aria-hidden="true">
   </nav>
 
   <!-- GRID -->
@@ -250,40 +251,40 @@
 
   <script>
     const photos = [
-      { id: 10, file: 'wolf3.jpeg', cat: 'art', w: 800, h: 600, title: '作品タイトル 01', specs: { size: 'F10号 (530×455mm)', date: '2024年 3月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 20, file: 'degi1.png',cat: 'illustration', w: 600, h: 800, title: '作品タイトル 02', specs: { size: 'A2 (420×594mm)', date: '2024年 1月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 30, file: 'aq3.jpeg', cat: 'art', w: 800, h: 530, title: '作品タイトル 03', specs: { size: 'F8号 (455×380mm)', date: '2023年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 10, file: 'wolf3.jpeg', cat: 'art', w: 800, h: 600, title: '作品タイトル 01', specs: { size: 'F6号 (410×318mm)', date: '2024年 3月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 20, file: 'degi1.png',cat: 'illustration', w: 600, h: 800, title: '作品タイトル（Neon Wolf） 02', specs: { size: 'A2 (420×594mm)', date: '2024年 1月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 30, file: 'aq3.jpeg', cat: 'art', w: 800, h: 530, title: '作品タイトル（絆） 03', specs: { size: 'F6号 (410×318mm)', date: '2023年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 40, file: 'cat3.jpeg',cat: 'webdesign', w: 700, h: 700, title: '作品タイトル 04', specs: { size: '3000×3000px', date: '2024年 2月', time: '5日間', soft: 'Photoshop / Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 50, file: 'wolf4.jpeg', cat: 'art', w: 600, h: 900, title: '作品タイトル 05', specs: { size: 'F12号 (606×500mm)', date: '2023年 9月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 60, file: 'line0.png', cat: 'illustration', w: 900, h: 500, title: '作品タイトル 06', specs: { size: 'B3 (515×364mm)', date: '2024年 4月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 70, file: '260326_banner300_13.jpg', cat: 'graphic', w: 800, h: 800, title: '作品タイトル 07', specs: { size: '4000×4000px', date: '2024年 3月', time: '1週間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 80, file: 'fox1.jpeg', cat: 'art', w: 600, h: 750, title: '作品タイトル 08', specs: { size: 'F6号 (410×318mm)', date: '2023年 12月', time: '10日間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 90, file: 'wolf5.jpeg', cat: 'art', w: 750, h: 560, title: '作品タイトル 09', specs: { size: 'F10号 (530×455mm)', date: '2023年 8月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 100, file: '1dezaincomp_13.jpg', cat: 'webdesign', w: 800, h: 600, title: '作品タイトル 10', specs: { size: '297×210mm (A4)', date: '2024年 1月', time: '4日間', soft: 'Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 50, file: 'wolf4.jpeg', cat: 'art', w: 600, h: 900, title: '作品タイトル（漆黒） 05', specs: { size: 'F4号 (330×240mm)', date: '2023年 9月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 60, file: 'line0.png', cat: 'illustration', w: 900, h: 500, title: '作品タイトル（ハスキーのりん） 06', specs: { size: 'B3 (515×364mm)', date: '2024年 4月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 70, file: '260326_banner300_13.jpg', cat: 'graphic', w: 800, h: 800, title: '作品タイトル（Autumn Latte Banner） 07', specs: { size: '4000×4000px', date: '2024年 3月', time: '1週間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 80, file: 'fox1.jpeg', cat: 'art', w: 600, h: 750, title: '作品タイトル（月に謳う） 08', specs: { size: 'F4号 (330×240mm)', date: '2023年 12月', time: '10日間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 90, file: 'wolf5.jpeg', cat: 'art', w: 750, h: 560, title: '作品タイトル（穏やかな眼差し） 09', specs: { size: 'F4号 (330×240mm)', date: '2023年 8月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 100, file: '1dezaincomp_13.jpg', cat: 'webdesign', w: 800, h: 600, title: '作品タイトル（みんなのパソコン教室 LP） 10', specs: { size: '297×210mm (A4)', date: '2024年 1月', time: '4日間', soft: 'HTML/CSS/Figma' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 110, file: 'degi4.png', cat: 'illustration', w: 600, h: 850, title: '作品タイトル 11', specs: { size: 'A2 (420×594mm)', date: '2023年 10月', time: '5日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 120, file: 'wolf6.jpeg', cat: 'art', w: 900, h: 550, title: '作品タイトル 12', specs: { size: 'F15号 (652×530mm)', date: '2024年 2月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 130, file: 'copy260330_leaflet_13.jpg', cat: 'graphic', w: 700, h: 700, title: '作品タイトル 13', specs: { size: '3500×3500px', date: '2023年 7月', time: '6日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 140, cat: 'art', w: 600, h: 800, title: '作品タイトル 14', specs: { size: 'F10号 (530×455mm)', date: '2023年 6月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 120,  file: 'wolf6.jpeg',  cat: 'art', w: 900, h: 550, title: '作品タイトル 12', specs: { size: 'F15号 (652×530mm)', date: '2024年 2月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 130, file: 'copy260330_leaflet_13.jpg', cat: 'graphic', w: 700, h: 700, title: '作品タイトル（Webプログラマー養成科） 募集チラシ 13', specs: { size: '3500×3500px', date: '2023年 7月', time: '6日間', soft: 'Procreate/Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 140, file: 'aq1.jpeg', cat: 'art', w: 600, h: 800, title: '作品タイトル(Music Lover) 14', specs: { size: 'F10号 (530×455mm)', date: '2023年 6月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 150, file: 'degi5.png', cat: 'illustration', w: 800, h: 600, title: '作品タイトル 15', specs: { size: 'B2 (515×728mm)', date: '2023年 5月', time: '1週間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 160, cat: 'art', w: 750, h: 700, title: '作品タイトル 16', specs: { size: 'F8号 (455×380mm)', date: '2023年 4月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 170, cat: 'art', w: 600, h: 900, title: '作品タイトル 17', specs: { size: 'F12号 (606×500mm)', date: '2023年 3月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 160,  file: 'dog1.jpeg', cat: 'art', w: 750, h: 700, title: '作品タイトル(友情) 16', specs: { size: 'F4号 (330×240mm)', date: '2023年 4月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 170,  file: 'wolf1.jpeg', cat: 'art', w: 600, h: 900, title: '作品タイトル(彩狼) 17', specs: { size: 'F4号 (330×240mm)', date: '2023年 3月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 180, file: 'degi8.jpg',cat: 'illustration', w: 900, h: 600, title: '作品タイトル 18', specs: { size: 'A1 (594×841mm)', date: '2023年 2月', time: '2週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 190, cat: 'webdesign', w: 750, h: 950, title: '作品タイトル 19', specs: { size: '3000×3800px', date: '2023年 1月', time: '4日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 200, cat: 'art', w: 850, h: 650, title: '作品タイトル 20', specs: { size: 'F10号 (530×455mm)', date: '2022年 12月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 210, cat: 'art', w: 700, h: 600, title: '作品タイトル 21', specs: { size: 'F8号 (455×380mm)', date: '2022年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 220, cat: 'illustration', w: 650, h: 900, title: '作品タイトル 22', specs: { size: 'A2 (420×594mm)', date: '2022年 10月', time: '6日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 190, file: 'bird1.jpeg', cat: 'webdesign', w: 750, h: 950, title: '作品タイトル(日本画) 19', specs: { size: '3000×3800px', date: '2023年 1月', time: '4日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 200, file: 'aq2.jpeg', cat: 'art', w: 850, h: 650, title: '作品タイトル 20', specs: { size: 'F4号 (330×240mm)', date: '2022年 12月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 210, file: 'draw2.jpeg', cat: 'art', w: 700, h: 600, title: '作品タイトル 21', specs: { size: 'F8号 (455×380mm)', date: '2022年 11月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 220, file: 'hsky1.jpeg', cat: 'illustration', w: 650, h: 900, title: '作品タイトル 22', specs: { size: 'A2 (420×594mm)', date: '2022年 10月', time: '6日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 230, file: '260327_banner300_13.jpg', cat: 'graphic', w: 900, h: 600, title: '作品タイトル 23', specs: { size: '3600×2400px', date: '2022年 9月', time: '1週間', soft: 'Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 240, cat: 'art', w: 600, h: 750, title: '作品タイトル 24', specs: { size: 'F6号 (410×318mm)', date: '2022年 8月', time: '4週間', medium: '油彩・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 250, cat: 'illustration', w: 850, h: 600, title: '作品タイトル 25', specs: { size: 'B3 (515×364mm)', date: '2022年 7月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 260, cat: 'art', w: 950, h: 700, title: '作品タイトル 26', specs: { size: 'F15号 (652×530mm)', date: '2022年 6月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 270, cat: 'webdesign', w: 700, h: 700, title: '作品タイトル 27', specs: { size: '3000×3000px', date: '2022年 5月', time: '5日間', soft: 'Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 280, cat: 'art', w: 600, h: 850, title: '作品タイトル 28', specs: { size: 'F12号 (606×500mm)', date: '2022年 4月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 290, cat: 'illustration', w: 900, h: 650, title: '作品タイトル 29', specs: { size: 'A1 (594×841mm)', date: '2022年 3月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 300, cat: 'art', w: 750, h: 950, title: '作品タイトル 30', specs: { size: 'F10号 (530×455mm)', date: '2022年 2月', time: '2週間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 310, cat: 'graphic', w: 800, h: 600, title: '作品タイトル 31', specs: { size: '297×210mm (A4)', date: '2022年 1月', time: '4日間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 240,  file: 'dog2.jpeg', cat: 'art', w: 600, h: 750, title: '作品タイトル 24', specs: { size: 'F6号 (410×318mm)', date: '2022年 8月', time: '4週間', medium: '油彩・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 250, file: 'wolf10.png', cat: 'illustration', w: 850, h: 600, title: '作品タイトル 25', specs: { size: 'B3 (515×364mm)', date: '2022年 7月', time: '3日間', medium: '木炭・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 260,  file: 'draw1.jpeg',  cat: 'art', w: 950, h: 700, title: '作品タイトル 26', specs: { size: 'F15号 (652×530mm)', date: '2022年 6月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 270, file: 'aq5.jpeg', cat: 'webdesign', w: 700, h: 700, title: '作品タイトル 27', specs: { size: '297×210mm (A4)', date: '2022年 5月', time: '5日間', soft: 'Illustrator' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 280, file: 'wolf7.jpeg', cat: 'art', w: 600, h: 850, title: '作品タイトル(眼光) 28', specs: { size: 'F12号 (606×500mm)', date: '2022年 4月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 290, file: 'kin1.png', cat: 'illustration', w: 900, h: 650, title: '作品タイトル 29', specs: { size: 'F4号 (330×240mm)', date: '2022年 3月', time: '1週間', medium: '鉛筆・ケント紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 300, file: 'wolf9.jpeg', cat: 'art', w: 750, h: 950, title: '作品タイトル(威嚇) 30', specs: { size: 'F4号 (330×240mm)', date: '2022年 2月', time: '2週間', medium: 'アクリル・パネル' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 310, file: 'degi6.png', cat: 'graphic', w: 800, h: 600, title: '作品タイトル 31', specs: { size: '297×210mm (A4)', date: '2022年 1月', time: '4日間', soft: 'Procreate / Photoshop' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 320, cat: 'art', w: 650, h: 600, title: '作品タイトル 32', specs: { size: 'F8号 (455×380mm)', date: '2021年 12月', time: '3週間', medium: '油彩・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 330, cat: 'illustration', w: 600, h: 900, title: '作品タイトル 33', specs: { size: 'A2 (420×594mm)', date: '2021年 11月', time: '5日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
-      { id: 340, cat: 'art', w: 900, h: 600, title: '作品タイトル 34', specs: { size: 'F12号 (606×500mm)', date: '2021年 10月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 330, file: 'degi8.png', cat: 'illustration', w: 600, h: 900, title: '作品タイトル 33', specs: { size: 'A2 (420×594mm)', date: '2021年 11月', time: '5日間', medium: '鉛筆・画用紙' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
+      { id: 340, file: 'aq4.jpeg', cat: 'art', w: 900, h: 600, title: '作品タイトル 34', specs: { size: '297×210mm (A4)', date: '2021年 10月', time: '2週間', medium: 'アクリル・キャンバス' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 350, cat: 'webdesign', w: 750, h: 750, title: '作品タイトル 35', specs: { size: '3500×3500px', date: '2021年 9月', time: '6日間', soft: 'Procreate' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },
       { id: 360, cat: 'art', w: 850, h: 600, title: '作品タイトル 36', specs: { size: 'F10号 (530×455mm)', date: '2021年 8月', time: '4週間', medium: '油彩・麻布' }, concept: 'コンセプトをここに書きます。作品に込めた思いや制作背景、テーマなどを自由に記述してください。' },];
      
@@ -306,8 +307,8 @@ window.addEventListener("load", () => {
     const grid = document.getElementById('grid');
 
     // 画面幅に応じて行数を決定（PC:3行 / タブレット:2行 / スマホ:1行）
-    const ROWS = window.innerWidth <= 480 ? 1 : 2;
-    const ROW_SPEEDS = { 1: [1], 2: [1, 0.9] };
+    const ROWS = 2; // スマホ含め常に2行
+    const ROW_SPEEDS = { 2: [1, 0.9] };
     const speeds = ROW_SPEEDS[ROWS];
 
     grid.style.setProperty('--rows', ROWS);
@@ -634,18 +635,38 @@ window.addEventListener("load", () => {
       clampTarget();
     });
 
-    // タッチで横スクロール
+    // タッチで横スクロール（縦スワイプも横スクロールに変換・自動スクロールも連動）
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchStartTarget = 0;
+    let touchLocked = null; // 'h'=横 / 'v'=縦（最初の動きで確定）
+
     grid.addEventListener('touchstart', (e) => {
-      pauseAuto();
       touchStartX = e.touches[0].pageX;
+      touchStartY = e.touches[0].pageY;
       touchStartTarget = targetScroll;
+      touchLocked = null;
+      gridHover = true; // タッチ開始で自動スクロール有効化
     }, { passive: true });
+
     grid.addEventListener('touchmove', (e) => {
+      const dx = e.touches[0].pageX - touchStartX;
+      const dy = e.touches[0].pageY - touchStartY;
+
+      // 最初に大きく動いた方向を確定
+      if (!touchLocked) {
+        touchLocked = Math.abs(dx) >= Math.abs(dy) ? 'h' : 'v';
+      }
+
+      // 縦横どちらのスワイプも横スクロールに変換
+      const delta = touchLocked === 'h' ? -dx : -dy;
       pauseAuto();
-      targetScroll = touchStartTarget - (e.touches[0].pageX - touchStartX);
+      targetScroll = touchStartTarget + delta;
       clampTarget();
+    }, { passive: true });
+
+    grid.addEventListener('touchend', () => {
+      touchLocked = null;
     }, { passive: true });
   </script>
 
