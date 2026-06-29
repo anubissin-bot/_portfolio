@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -307,8 +307,8 @@ window.addEventListener("load", () => {
     const grid = document.getElementById('grid');
 
     // 画面幅に応じて行数を決定（PC:3行 / タブレット:2行 / スマホ:1行）
-    const ROWS = window.innerWidth <= 480 ? 1 : 2;
-    const ROW_SPEEDS = { 1: [1], 2: [1, 0.9] };
+    const ROWS = 2; // スマホ含め常に2行
+    const ROW_SPEEDS = { 2: [1, 0.9] };
     const speeds = ROW_SPEEDS[ROWS];
 
     grid.style.setProperty('--rows', ROWS);
@@ -322,7 +322,7 @@ window.addEventListener("load", () => {
       rows.push(row);
     }
 
-   photos.forEach((p, i) => {
+    photos.forEach((p, i) => {
       const item = document.createElement('div');
       item.className = 'photo-item';
       item.dataset.cat = p.cat;
@@ -585,12 +585,8 @@ window.addEventListener("load", () => {
       clampTarget();
     });
 
-    // スマホは最初から gridHover=true にして自動スクロールを開始
-    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-      gridHover = true;
-    }
-
     // 作品エリア：カーソルが乗ったら自動スクロール開始 + 全カードを薄暗くする
+    // mouseleaveを少し遅らせてチカチカを防止
     let dimLeaveTimer = null;
     grid.addEventListener('mouseenter', () => {
       clearTimeout(dimLeaveTimer);
@@ -601,16 +597,16 @@ window.addEventListener("load", () => {
       dimLeaveTimer = setTimeout(() => {
         gridHover = false;
         rows.forEach(r => r.classList.remove('dim'));
-      }, 80);
+      }, 80); // 80ms の猶予でチカチカ防止
     });
 
-    // 上部ナビにカーソルがある間は自動スクロールを止める
+    // 上部ナビ（header / フィルターバー）にカーソルがある間は自動スクロールを止める
     document.querySelector('header').addEventListener('mouseenter', () => { navHover = true; });
     document.querySelector('header').addEventListener('mouseleave', () => { navHover = false; });
     document.querySelector('.filter-bar').addEventListener('mouseenter', () => { navHover = true; });
     document.querySelector('.filter-bar').addEventListener('mouseleave', () => { navHover = false; });
 
-    // ホイール → 横スクロール
+    // ホイール → 横スクロール（操作した時だけ自動を一時停止し、しばらくしたら再開）
     grid.addEventListener('wheel', (e) => {
       e.preventDefault();
       pauseAuto();
@@ -639,29 +635,33 @@ window.addEventListener("load", () => {
       clampTarget();
     });
 
-    // タッチスクロール（縦横どちらも横スクロールに変換、感度2.5倍）
+    // タッチで横スクロール（縦スワイプも横スクロールに変換・自動スクロールも連動）
     let touchStartX = 0;
     let touchStartY = 0;
     let touchStartTarget = 0;
-    let touchLocked = null;
+    let touchLocked = null; // 'h'=横 / 'v'=縦（最初の動きで確定）
 
     grid.addEventListener('touchstart', (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
+      touchStartX = e.touches[0].pageX;
+      touchStartY = e.touches[0].pageY;
       touchStartTarget = targetScroll;
       touchLocked = null;
-      gridHover = true;
+      gridHover = true; // タッチ開始で自動スクロール有効化
     }, { passive: true });
 
     grid.addEventListener('touchmove', (e) => {
-      const dx = e.touches[0].clientX - touchStartX;
-      const dy = e.touches[0].clientY - touchStartY;
+      const dx = e.touches[0].pageX - touchStartX;
+      const dy = e.touches[0].pageY - touchStartY;
+
+      // 最初に大きく動いた方向を確定
       if (!touchLocked) {
         touchLocked = Math.abs(dx) >= Math.abs(dy) ? 'h' : 'v';
       }
-      const rawDelta = touchLocked === 'h' ? -dx : -dy;
+
+      // 縦横どちらのスワイプも横スクロールに変換
+      const delta = touchLocked === 'h' ? -dx : -dy;
       pauseAuto();
-      targetScroll = touchStartTarget + rawDelta * 2.5;
+      targetScroll = touchStartTarget + delta;
       clampTarget();
     }, { passive: true });
 
@@ -671,4 +671,4 @@ window.addEventListener("load", () => {
   </script>
 
 </body>
-</html>
+</html>   
